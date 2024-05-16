@@ -31,7 +31,6 @@ const convertErrors = errors => errors.map(error => ({
   code: error.code,
   description: error.description,
 }));
-
 export default function Reducer(state = initialState, action) {
   switch (action.type) {
     case ERROR_SIGN_IN: {

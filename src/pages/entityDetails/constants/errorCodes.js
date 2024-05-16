@@ -1,0 +1,3 @@
+export const ENTITY_NOT_FOUND = 'ENTITY_NOT_FOUND';
+export const FAILED_UPLOAD = 'FAILED_UPLOAD';
+export const FAILED_UPDATE = 'FAILED_UPDATE';
