@@ -1,3 +1,11 @@
 {
-  "title": "This is the first page that visitors to your site will see, place all the information they need here"
+  "delete.title": "Are you sure you want to delete this item?",
+  "delete.accept": "Delete",
+  "delete.cancel": "Cancel",
+  "error.INTERNAL_SERVER_ERROR": "Something went wrong. Please try again later.",
+  "error.ENTITY_NOT_FOUND": "Entity not found",
+  "filter.title": "Filter",
+  "filter.success": "Apply",
+  "filter.name.label": "Name",
+  "filter.format.label": "Format"
 }

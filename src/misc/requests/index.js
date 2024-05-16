@@ -10,19 +10,19 @@ axios.interceptors.request.use((params) => {
 });
 
 const addAxiosInterceptors = ({
-  onSignOut,
-}) => {
-  axios.interceptors.response.use(
-    (response) => response.data,
-    (error) => {
-      if (error.response.data
-        .some(beError => beError?.code === 'INVALID_TOKEN')
-      ) {
-        onSignOut();
-      }
-      throw error.response.data;
-    }
-  );
+                                  onSignOut,
+                              }) => {
+    axios.interceptors.response.use(
+        (response) => response.data,
+        (error) => {
+            if (Array.isArray(error.response.data) &&
+                error.response.data.some(beError => beError?.code === 'INVALID_TOKEN')
+            ) {
+                onSignOut();
+            }
+            throw error.response;
+        }
+    );
 };
 
 export {
